@@ -7,7 +7,6 @@ RUN curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/
 RUN rm -fr /app && git clone https://github.com/bzdk/Ourls.git /app
 WORKDIR /app
 RUN composer install
-RUN mysql -uroot < db.sql
 
 EXPOSE 80 3306
 CMD ["/run.sh"]
