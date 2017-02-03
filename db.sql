@@ -1,3 +1,7 @@
+CREATE DATABASE `ourls` DEFAULT CHARACTER SET utf8;
+
+USE `ourls`;
+
 CREATE TABLE `urls` (
     `id` INT (11) NOT NULL AUTO_INCREMENT,
     `sha1` CHAR (40) NOT NULL,
@@ -12,5 +16,5 @@ CREATE TABLE `urls` (
     INDEX (`creator`),
     INDEX (`count`),
     INDEX (`status`)
-) ENGINE = INNODB CHARACTER
+) ENGINE = myisam CHARACTER
 SET utf8 COLLATE utf8_unicode_ci;
