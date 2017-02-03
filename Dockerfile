@@ -6,7 +6,7 @@ RUN apt-get update && \
 RUN curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
 RUN rm -fr /app && git clone https://github.com/bzdk/Ourls.git /app
 RUN composer install
-RUN mysql -uroot < urls.sql
+RUN mysql -uroot < db.sql
 
 EXPOSE 80 3306
 CMD ["/run.sh"]
