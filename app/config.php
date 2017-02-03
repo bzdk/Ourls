@@ -2,18 +2,18 @@
 
 return [
     'debug'    => true,
-    'base_url' => 'YourSiteUrl',
+    'base_url' => 'http://timotai.co',
     'hash'     => [
-        'salt'     => 'SomeRandomKey',
-        'length'   => 5,
+        'salt'     => 'kM3Y34F9WKjamt5KaKNMKZBM',
+        'length'   => 4,
         'alphabet' => 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890',
     ],
     'db' => [
         'database_type' => 'mysql',
-        'database_name' => 'name',
+        'database_name' => 'ourls',
         'server'        => 'localhost',
-        'username'      => 'your_username',
-        'password'      => 'your_password',
+        'username'      => 'root',
+        'password'      => '',
         'charset'       => 'utf8',
         'port'          => 3306,
         'option'        => [
@@ -22,10 +22,10 @@ return [
     ],
     'db_read' => [
         'database_type' => 'mysql',
-        'database_name' => 'name',
+        'database_name' => 'ourls',
         'server'        => 'localhost',
-        'username'      => 'your_username',
-        'password'      => 'your_password',
+        'username'      => 'root',
+        'password'      => '',
         'charset'       => 'utf8',
         'port'          => 3306,
         'option'        => [
