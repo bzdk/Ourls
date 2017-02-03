@@ -2,7 +2,7 @@
 
 return [
     'debug'    => true,
-    'base_url' => 'http://timotai.co',
+    'base_url' => 'http://timotai.co/',
     'hash'     => [
         'salt'     => 'kM3Y34F9WKjamt5KaKNMKZBM',
         'length'   => 4,
