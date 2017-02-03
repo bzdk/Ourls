@@ -1,0 +1,4 @@
+wget https://raw.githubusercontent.com/bzdk/Ourls/master/Dockerfile
+docker build -t ourls .
+docker run -d --name ourls -p 8007:80 ourls
+docker exec -it ourls bash -c "mysql -uroot < /app/db.sql"
